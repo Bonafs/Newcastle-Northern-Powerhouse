@@ -1,0 +1,34 @@
+/* Global Styles */ 
+body { 
+    font-family: 'Inter', sans-serif; 
+    line-height: 1.6; 
+} 
+ 
+h1, h2, h3 { 
+    font-family: 'Macondo', cursive; 
+    color: #3a2620; /* Dark brown */ 
+} 
+ 
+.section { 
+    margin-top: 2rem; 
+    margin-bottom: 2rem; 
+} 
+ 
+.bg-light { 
+    background-color: #f9f9f9 !important; 
+} 
+ 
+.text-primary { 
+    color: #416a8e !important; /* Blue */ 
+} 
+ 
+/* Buttons */ 
+.btn-primary { 
+    background-color: #416a8e; 
+    border: none; 
+    transition: background-color 0.3s ease-in-out; 
+} 
+ 
+.btn-primary:hover { 
+    background-color: #7a9fc2; 
+}
