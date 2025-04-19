@@ -79,14 +79,38 @@
                         <li>Newcastle</li>
                     </ul>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <h3>Why Newcastle Stands Out</h3>
-                    <p>
-                        Among the cities designated for the Northern Powerhouse Initiative, Newcastle stands out as the prime
-                        investment destination of choice. With its vibrant economy, world-class infrastructure, and
-                        welcoming community, Newcastle offers unparalleled opportunities for growth and success.
-                    </p>
-                </div>
+                <!-- Modal Trigger -->
+<div class="col-md-6 mb-4">
+    <h3>Why Newcastle Stands Out</h3>
+    <p>
+        Newcastle stands out among the cities designated for the Northern Powerhouse Initiative, Newcastle stands out as the prime
+        investment destination of choice. With its vibrant economy, world-class infrastructure, and
+        welcoming community, Newcastle offers unparalleled opportunities for growth and success.
+    </p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#whyNewcastleModal">
+        Learn More
+    </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="whyNewcastleModal" tabindex="-1" aria-labelledby="whyNewcastleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="whyNewcastleModalLabel">Why Newcastle Stands Out</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Newcastle stands out among the cities designated for the Northern Powerhouse Initiative, Newcastle stands out as the prime
+                investment destination of choice. With its vibrant economy, world-class infrastructure, and
+                welcoming community, Newcastle offers unparalleled opportunities for growth and success.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
             </div>
         </section>
     
