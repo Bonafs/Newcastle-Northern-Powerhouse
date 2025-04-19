@@ -2,17 +2,19 @@ from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
-@app.route('/contact', methods=['GET'])
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    name = request.form['name']
-    email = request.form['email']
-    message = request.form['message']
-    # Process the form data (e.g., save to database or send email)
-    return redirect('/success')
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        message = request.form['message']
+        # Process the form data (e.g., save to database or send email)
+        return redirect('/success')
+    return render_template('contact.html')
 
 @app.route('/success')
 def success():
-    return "Thank you for your message! We'll get back to you soon."
+    return render_template('success.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
