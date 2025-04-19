@@ -17,14 +17,11 @@ html, body {
 }
 
 /* Header styles */
+/* Removed background image styles from the header */
 header {
-    background: url('../images/header-bg.jpeg') no-repeat center center/cover;
-    background-image: url('assets/images/header-image.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #343a40; /* Dark background color */
     color: white;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
