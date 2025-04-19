@@ -24,7 +24,8 @@ h1, h2, h3 {
  
 /* Buttons */ 
 .btn-primary { 
-    background-color: #416a8e; 
+    background-color: cyan !important;
+    color: #fff !important; 
     border: none; 
     transition: background-color 0.3s ease-in-out; 
 } 
