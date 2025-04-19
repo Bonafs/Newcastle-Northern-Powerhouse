@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect
 
 app = Flask(__name__)
 
-@app.route('/contact', methods=['POST'])
+@app.route('/contact', methods=['GET'])
 def contact():
     name = request.form['name']
     email = request.form['email']
