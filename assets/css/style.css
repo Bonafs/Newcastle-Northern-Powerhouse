@@ -1,4 +1,5 @@
-/* Global Styles */ 
+/*
+    Global Styles 
 body { 
     font-family: 'Inter', sans-serif; 
     line-height: 1.6; 
@@ -32,4 +33,6 @@ h1, h2, h3 {
  
 .btn-primary:hover { 
     background-color: #7a9fc2; 
-}
+} 
+
+*/
