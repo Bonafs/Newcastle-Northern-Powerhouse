@@ -2,9 +2,9 @@
 h2, h3 {
     font-size: 2.0em; /* 100% larger than the default size */
 }
-/* Increase the font size of p by 100% */
+/* Increase the font size of p by 50% */
 p {
-    font-size: 2em; /* 100% larger than the default size */
+    font-size: 1.5em; /* 50% larger than the default size */
 }
 
 
@@ -30,7 +30,7 @@ html, body {
 /* Removed background image styles from the header */
 header {
     background-color: #343a40; /* Dark background color */
-    color: white;
+    color: gold;
     height: auto;
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@ header {
     padding: 5rem 0;
 }
 footer {
-    background-color: #333;
+    background-color:gold;
     color: white;
     padding: 10px 0;
 }
