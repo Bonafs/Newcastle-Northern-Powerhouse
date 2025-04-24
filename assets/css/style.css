@@ -54,6 +54,31 @@ header {
     text-align: center;
     padding: 5rem 0;
 }
+
+/* Custom styles for cards */
+.card {
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+    color: gold; /* Gold text color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.card-title {
+    font-size: 1.5em; /* Slightly larger title font */
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.2em; /* Slightly larger text font */
+}
+
+.card-body {
+    padding: 20px; /* Add padding inside the card */
+}
+
+.shadow-lg {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+}
+
 footer {
     background-color:gold;
     color: white;
