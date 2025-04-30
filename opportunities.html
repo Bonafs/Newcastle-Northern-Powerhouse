@@ -63,31 +63,61 @@
     </header>
     <!-- Opportunities Section -->
     <main class="container-fluid d-flex align-items-center justify-content-center"
-        style="background-image: url('assets/images/opportunities.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; width: 100%; padding: 2rem;">
-        <div class="content content-wrapper">
+    style="background-image: url('assets/images/opportunities.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; width: 100%; padding: 2rem;">
+    <div class="content content-wrapper">
         <h2 class="text-center mb-4">Opportunities</h2>
         <p class="lead text-center">Newcastle offers a wealth of opportunities for investment and growth.</p>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <h3>Investment Opportunities</h3>
-                <p>Newcastle is a prime location for various investment opportunities, including technology, healthcare, and renewable energy sectors.</p>
+        <div id="opportunitiesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Investment Opportunities -->
+                <div class="carousel-item active">
+                    <div class="card opportunities-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Investment Opportunities</h3>
+                            <p class="card-text">Newcastle is a prime location for various investment opportunities, including technology, healthcare, and renewable energy sectors.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Business Growth -->
+                <div class="carousel-item">
+                    <div class="card opportunities-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Business Growth</h3>
+                            <p class="card-text">The city provides a supportive environment for startups and established businesses to thrive.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Infrastructure -->
+                <div class="carousel-item">
+                    <div class="card opportunities-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Infrastructure</h3>
+                            <p class="card-text">Newcastle boasts world-class infrastructure, including excellent transport links, modern office spaces, and advanced digital connectivity.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quality of Life -->
+                <div class="carousel-item">
+                    <div class="card opportunities-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
+                        <div class="card-body">
+                            <h3 class="card-title">Quality of Life</h3>
+                            <p class="card-text">Enjoy a high quality of life in Newcastle, with its vibrant cultural scene, affordable living, and welcoming community.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <h3>Business Growth</h3>
-                <p>The city provides a supportive environment for startups and established businesses to thrive.</p>
-            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#opportunitiesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#opportunitiesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <h3>Infrastructure</h3>
-                <p>Newcastle boasts world-class infrastructure, including excellent transport links, modern office spaces, and advanced digital connectivity.</p>
-            </div>
-            <div class="col-md-6 mb-4">
-                <h3>Quality of Life</h3>
-                <p>Enjoy a high quality of life in Newcastle, with its vibrant cultural scene, affordable living, and welcoming community.</p>
-            </div>
-        </div>
-    </main>
+    </div>
+</main>
 
     <!-- Footer -->
     <footer class="bg-dark content-wrapper text-center py-4">
