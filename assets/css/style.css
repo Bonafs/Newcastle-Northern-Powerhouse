@@ -309,6 +309,7 @@ footer .social-icons i {
     justify-content: space-between;
 }
 
+
 /* =========================
    Section: Investment Cards
    ========================= */
@@ -340,7 +341,10 @@ footer .social-icons i {
     .home-content-card {
         padding: 1rem;
     }
-
+    .history-card,
+    .demography-card,
+    .investment-card,
+    .opportunities-card,
     .card,
     .carousel-item .card {
         padding: 10px;
