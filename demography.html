@@ -15,11 +15,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        /* Inline CSS to set text color to gold in the body section */
         .content-wrapper {
             color: gold;
         }
-
         .nav-link {
             color: gold;
         }
@@ -30,16 +28,11 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container d-flex justify-content-between">
-            <!-- Title aligned to the start -->
-            <a class="navbar-brand me-auto content-wrapper " href="index.html">Newcastle: The Northern Powerhouse</a>
-
-            <!-- Navbar toggler for smaller screens -->
+            <a class="navbar-brand me-auto content-wrapper" href="index.html">Newcastle: The Northern Powerhouse</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- Navigation items aligned to the end -->
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -52,92 +45,89 @@
             </div>
         </div>
     </nav>
-
     <!-- Header Section -->
     <header class="bg-dark content-wrapper text-center py-5">
         <div class="container">
-            <!-- Logo Image -->
             <img src="assets/images/home.jpg" alt="Newcastle Logo" class="mb-3" style="width: 80px; height: auto;">
             <h1 class="display-4">Newcastle: The Northern Powerhouse</h1>
             <p class="lead">Welcome to Newcastle: The Prime Northern Powerhouse Investment Destination</p>
         </div>
     </header>
-
     <!-- Demography Section -->
     <main class="container-fluid d-flex align-items-center justify-content-center"
-    style="background-image: url('assets/images/demography.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; width: 100%; padding: 2rem;">
-    <div class="content content-wrapper">
-        <h2 class="text-center mb-4">Demography</h2>
-        <p class="lead text-center">Newcastle is a vibrant city with a rich cultural heritage and a diverse population.</p>
-        <div id="demographyCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Population Overview -->
-                <div class="carousel-item active">
-                    <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
-                        <div class="card-body">
-                            <h3 class="card-title">Population Overview</h3>
-                            <p class="card-text">Newcastle has a population of approximately 150,000 residents, with a diverse mix of cultures and backgrounds.</p>
+        style="background-image: url('assets/images/demography.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh; width: 100%; padding: 2rem;">
+        <div class="content content-wrapper">
+            <h2 class="text-center mb-4">Demography</h2>
+            <p class="lead text-center">Newcastle is a vibrant city with a rich cultural heritage and a diverse population.</p>
+            <div id="demographyCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Population Overview -->
+                    <div class="carousel-item active">
+                        <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <h3 class="card-title">Population Overview</h3>
+                                <p class="card-text">Newcastle has a population of approximately 150,000 residents, with a diverse mix of cultures and backgrounds.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Age Distribution -->
+                    <div class="carousel-item">
+                        <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <h3 class="card-title">Age Distribution</h3>
+                                <p class="card-text">The city has a youthful demographic, with a significant proportion of the population aged between 18 and 30.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education -->
+                    <div class="carousel-item">
+                        <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <h3 class="card-title">Education</h3>
+                                <p class="card-text">Newcastle is home to world-class universities and colleges, attracting students from across the globe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Employment -->
+                    <div class="carousel-item">
+                        <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <h3 class="card-title">Employment</h3>
+                                <p class="card-text">The city boasts a thriving job market, with opportunities in technology, healthcare, and finance sectors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Housing -->
+                    <div class="carousel-item">
+                        <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <h3 class="card-title">Housing</h3>
+                                <p class="card-text">Newcastle offers a variety of housing options, from modern apartments to historic homes, catering to diverse preferences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Community -->
+                    <div class="carousel-item">
+                        <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
+                            <div class="card-body">
+                                <h3 class="card-title">Community</h3>
+                                <p class="card-text">The city is known for its friendly and welcoming community, fostering a strong sense of belonging among residents.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Age Distribution -->
-                <div class="carousel-item">
-                    <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
-                        <div class="card-body">
-                            <h3 class="card-title">Age Distribution</h3>
-                            <p class="card-text">The city has a youthful demographic, with a significant proportion of the population aged between 18 and 30.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Education -->
-                <div class="carousel-item">
-                    <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
-                        <div class="card-body">
-                            <h3 class="card-title">Education</h3>
-                            <p class="card-text">Newcastle is home to world-class universities and colleges, attracting students from across the globe.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Employment -->
-                <div class="carousel-item">
-                    <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
-                        <div class="card-body">
-                            <h3 class="card-title">Employment</h3>
-                            <p class="card-text">The city boasts a thriving job market, with opportunities in technology, healthcare, and finance sectors.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Housing -->
-                <div class="carousel-item">
-                    <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
-                        <div class="card-body">
-                            <h3 class="card-title">Housing</h3>
-                            <p class="card-text">Newcastle offers a variety of housing options, from modern apartments to historic homes, catering to diverse preferences.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Community -->
-                <div class="carousel-item">
-                    <div class="card demography-card shadow-lg h-100 mx-auto" style="max-width: 600px;">
-                        <div class="card-body">
-                            <h3 class="card-title">Community</h3>
-                            <p class="card-text">The city is known for its friendly and welcoming community, fostering a strong sense of belonging among residents.</p>
-                        </div>
-                    </div>
-                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demographyCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demographyCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demographyCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demographyCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </div>
-</main>
+    </main>
     <!-- Footer -->
     <footer class="bg-dark content-wrapper text-center py-4">
         <div class="container">
@@ -161,9 +151,7 @@
             </div>
         </div>
     </footer>
-    <!-- Include Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
