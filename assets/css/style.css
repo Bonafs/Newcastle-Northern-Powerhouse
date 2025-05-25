@@ -9,7 +9,8 @@ body {
     padding: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -18,31 +19,36 @@ html, body {
 /* =========================
    Headings & Paragraphs
    ========================= */
-h2, h3 {
+h2,
+h3 {
     font-size: 2.0em;
 }
+
 p {
     font-size: 1.5em;
 }
 
 /* Home Page Paragraph Styling */
 .home-content-card {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     color: gold;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
 .home-content-list {
     list-style: none;
     padding-left: 0;
 }
+
 .home-content-list li {
     margin-bottom: 1rem;
     padding-left: 2rem;
     position: relative;
 }
+
 .home-content-list li::before {
     content: '';
     background-image: url('../images/home.jpg');
@@ -71,14 +77,17 @@ footer {
     color: white;
     padding: 10px 0;
 }
+
 footer .social-icons a {
     text-decoration: none !important;
     border-bottom: none !important;
     margin-right: 0.5rem;
 }
+
 footer .social-icons a:last-child {
     margin-right: 0;
 }
+
 footer .social-icons i {
     text-decoration: none !important;
     border-bottom: none !important;
@@ -91,9 +100,11 @@ footer .social-icons i {
 .text-gold {
     color: gold !important;
 }
+
 .source-btn {
     transition: all 0.3s ease-in-out;
 }
+
 .source-btn:hover {
     background-color: transparent;
     color: #0d6efd;
@@ -108,14 +119,19 @@ footer .social-icons i {
     position: relative;
     color: gold;
 }
+
 .content-wrapper::before {
     content: "";
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-.content-wrapper > * {
+
+.content-wrapper>* {
     position: relative;
     z-index: 2;
 }
@@ -128,22 +144,27 @@ footer .social-icons i {
     background-color: rgba(0, 0, 0, 0.6);
     color: gold;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     padding: 20px;
 }
+
 .card-title {
     font-size: 1.5em;
     font-weight: bold;
 }
+
 .card-text {
     font-size: 1.2em;
 }
+
 .card-body {
     padding: 20px;
 }
+
 .shadow-lg {
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
 .h-100 {
     height: 100%;
 }
@@ -161,15 +182,15 @@ footer .social-icons i {
     position: relative;
 }
 .carousel-inner {
-    width: 600px; /* Fixed width to match card max-width */
+    width: 600px;
     max-width: 100%;
-    display: block; /* Prevent flex from shrinking carousel-inner */
+    display: block;
     margin: 0 auto;
     min-height: 350px;
     position: relative;
 }
 .carousel-item .card {
-    margin: 0 1.5rem; /* Add horizontal space so cards never touch each other or the arrows */
+    margin: 0 1.5rem;
     width: 100%;
     max-width: 600px;
     min-height: 350px;
@@ -179,11 +200,11 @@ footer .social-icons i {
     transition: margin 0.3s;
 }
 
-/* Carousel Controls - Gold arrows with white border, fully visible and not overlapping cards */
+/* Carousel Controls - Gold arrows with white border, positioned close to carousel like home page */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     top: 50%;
     transform: translateY(-50%);
     z-index: 3;
@@ -191,10 +212,10 @@ footer .social-icons i {
     position: absolute;
 }
 .carousel-control-prev {
-    left: 0;
+    left: 0.5rem;
 }
 .carousel-control-next {
-    right: 0;
+    right: 0.5rem;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -202,12 +223,12 @@ footer .social-icons i {
     border-radius: 50%;
     border: 2px solid white;
     filter: none;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     background-size: 60% 60%;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -222,20 +243,19 @@ footer .social-icons i {
     }
     .carousel-control-prev,
     .carousel-control-next {
-        width: 2.2rem;
-        height: 2.2rem;
-        left: 0;
-        right: 0;
+        width: 1.7rem;
+        height: 1.7rem;
+        left: 0.2rem;
+        right: 0.2rem;
     }
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-        width: 1.7rem;
-        height: 1.7rem;
+        width: 1.2rem;
+        height: 1.2rem;
     }
 }
 
-
-}/* =========================
+/* =========================
    Custom Bullet Points
    ========================= */
 .custom-bullet-list {
@@ -243,11 +263,13 @@ footer .social-icons i {
     padding: 0;
     margin: 0;
 }
+
 .custom-bullet-list li {
     margin-bottom: 0.5rem;
     padding-left: 1.5rem;
     position: relative;
 }
+
 .custom-bullet-list li::before {
     content: '';
     background-image: url('../images/home.jpg');
@@ -268,7 +290,7 @@ footer .social-icons i {
     background-color: rgba(0, 0, 0, 0.5);
     color: gold;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
 }
@@ -281,7 +303,7 @@ footer .social-icons i {
     background-color: rgba(0, 0, 0, 0.5);
     color: gold;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -295,7 +317,7 @@ footer .social-icons i {
     background-color: rgba(0, 0, 0, 0.5);
     color: gold;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     padding: 20px;
 }
 
@@ -307,7 +329,7 @@ footer .social-icons i {
     background-color: rgba(0, 0, 0, 0.5);
     color: gold;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     padding: 20px;
 }
 
@@ -318,6 +340,7 @@ footer .social-icons i {
     .home-content-card {
         padding: 1rem;
     }
+
     .card,
     .carousel-item .card {
         padding: 10px;
