@@ -1,76 +1,213 @@
-/* Increase the font size of h2 by 100% */
-h2, h3 {
-    font-size: 2.0em; /* 100% larger than the default size */
-}
-/* Increase the font size of p by 50% */
-p {
-    font-size: 1.5em; /* 50% larger than the default size */
-}
-
-
+/* =========================
+   Typography & Layout
+   ========================= */
 body {
     font-family: 'Inter', sans-serif;
-    line-height: 1.6; 
+    line-height: 1.6;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
-/* Ensure the body and html take up the full height */
 html, body {
     height: 100%;
-    margin: 0;
     display: flex;
     flex-direction: column;
 }
 
-/* Custom class to set text color of source media button to gold */
+/* =========================
+   Headings & Paragraphs
+   ========================= */
+h2, h3 {
+    font-size: 2.0em;
+}
+p {
+    font-size: 1.5em;
+}
+
+/* Home Page Paragraph Styling */
+.home-content-card {
+    background: rgba(0,0,0,0.6);
+    color: gold;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.home-content-list {
+    list-style: none;
+    padding-left: 0;
+}
+.home-content-list li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+.home-content-list li::before {
+    content: '';
+    background-image: url('../images/home.jpg');
+    background-size: cover;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 0.3rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+.nav-link {
+    color: gold;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+    background-color: gold;
+    color: white;
+    padding: 10px 0;
+}
+footer .social-icons a {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    margin-right: 0.5rem;
+}
+footer .social-icons a:last-child {
+    margin-right: 0;
+}
+footer .social-icons i {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    vertical-align: middle;
+}
+
+/* =========================
+   Buttons
+   ========================= */
 .text-gold {
     color: gold !important;
 }
-
-/* Custom hover effect for the source media button */
 .source-btn {
     transition: all 0.3s ease-in-out;
 }
-
 .source-btn:hover {
     background-color: transparent;
-    color: #0d6efd; /* Bootstrap primary color */
+    color: #0d6efd;
     border: 2px solid #0d6efd;
 }
-/* Make the content-wrapper take up all available space */
+
+/* =========================
+   Content Wrapper
+   ========================= */
 .content-wrapper {
     flex: 1;
-}
-
-/* Header styles */
-/* Removed background image styles from the header */
-header {
-    background-color: #343a40; /* Dark background color */
+    position: relative;
     color: gold;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 5rem 0;
+}
+.content-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.content-wrapper > * {
+    position: relative;
+    z-index: 2;
 }
 
+/* =========================
+   Cards
+   ========================= */
+.card,
+.carousel-item .card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: gold;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.card-text {
+    font-size: 1.2em;
+}
+.card-body {
+    padding: 20px;
+}
+.shadow-lg {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+.h-100 {
+    height: 100%;
+}
 
-/* Custom bullet points using logo.jpg */ {
+/* =========================
+   Carousel
+   ========================= */
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.carousel-inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.carousel-item .card {
+    margin: 0 auto;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: gold;
+    border-radius: 50%;
+    border: 2px solid white;
+    filter: none;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 10%;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+/* =========================
+   Custom Bullet Points
+   ========================= */
+.custom-bullet-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .custom-bullet-list li {
     margin-bottom: 0.5rem;
     padding-left: 1.5rem;
     position: relative;
 }
-
 .custom-bullet-list li::before {
     content: '';
-    background-image: url('../images/home.jpg'); /* Correct relative path to logo.jpg */
+    background-image: url('../images/home.jpg');
     background-size: cover;
     width: 1rem;
     height: 1rem;
@@ -80,187 +217,66 @@ header {
     display: inline-block;
 }
 
-
-
-/* Custom styles for cards */
-.card {
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
-    color: gold; /* Gold text color */
-    border-radius: 10px; /* Rounded corners */
-}
-
-.card-title {
-    font-size: 1.5em; /* Slightly larger title font */
-    font-weight: bold;
-}
-
-.card-text {
-    font-size: 1.2em; /* Slightly larger text font */
-}
-
-.card-body {
-    padding: 20px; /* Add padding inside the card */
-}
-
-.shadow-lg {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
-}
-
-/* Center the carousel in the container */
-.carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-/* Style for carousel cards */
-.carousel-item .card {
-    background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
-    color: gold; /* Gold text color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
-    padding: 20px;
-}
-
-.carousel-item .demography-card {
-    background-color: rgba(0, 0, 0, 0.5); /* Match the overlay color */
-    color: gold; /* Gold text color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
-    padding: 20px;
-}
-
+/* =========================
+   Section: History Cards
+   ========================= */
+.history-card,
 .carousel-item .history-card {
-    background-color: rgba(0, 0, 0, 0.5); /* Match the overlay color */
-    color: gold; /* Gold text color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
-    padding: 20px;
-}
-
-.carousel-item .investment-card {
-    background-color: rgba(0, 0, 0, 0.5); /* Match the overlay color */
-    color: gold; /* Gold text color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
-    padding: 20px;
-}
-
-.carousel-item .opportunities-card {
-    background-color: rgba(0, 0, 0, 0.5); /* Match the overlay color */
-    color: gold; /* Gold text color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
-    padding: 20px;
-}
-
-/* Adjust carousel controls */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1); /* Make the icons white */
-}
-
-/* Styles for history cards */
-
-.history-card {
-    background-color: rgba(0, 0, 0, 0.5); /* Match the overlay color */
-    color: gold; /* Restore text color to gold */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: gold;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
-    
 }
 
-.history-card .card-title {
-    font-size: 1.5em; /* Slightly larger title font */
-    font-weight: bold;
-}
-
-.history-card .card-text {
-    font-size: 1.2em; /* Slightly larger text font */
-}
-
-/* Ensure all cards are equal in height */
-.h-100 {
-    height: 100%;
-}
-
-/* Ensure the content-wrapper has a transparent overlay */
-.content-wrapper {
-    position: relative;
+/* =========================
+   Section: Demography Cards
+   ========================= */
+.demography-card,
+.carousel-item .demography-card {
+    background-color: rgba(0, 0, 0, 0.5);
     color: gold;
-}
-
-.content-wrapper::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust transparency with the last value (0.5 = 50%) */
-    z-index: 1;
-}
-
-.content-wrapper > * {
-    position: relative;
-    z-index: 2; /* Ensures that the content is above the overlay */
-}
-
-/* Styles for demography cards */
-.demography-card {
-    background-color: rgba(0, 0, 0, 0.5); /* Match the overlay color */
-    color: gold; /* Gold text color */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.demography-card .card-title {
-    font-size: 1.5em; /* Slightly larger title font */
-    font-weight: bold;
+/* =========================
+   Section: Investment Cards
+   ========================= */
+.investment-card,
+.carousel-item .investment-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: gold;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    padding: 20px;
 }
 
-.demography-card .card-text {
-    font-size: 1.2em; /* Slightly larger text font */
+/* =========================
+   Section: Opportunities Cards
+   ========================= */
+.opportunities-card,
+.carousel-item .opportunities-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: gold;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    padding: 20px;
 }
 
-/* Ensure all cards are equal in height */
-.h-100 {
-    height: 100%;
-}
-
-footer {
-    background-color:gold;
-    color: white;
-    padding: 10px 0;
-}
-
-.nav-link {color: gold;
-}
-
-
-.content-wrapper {
-        position: relative;
-        color: gold;
+/* =========================
+   Responsive Utilities
+   ========================= */
+@media (max-width: 768px) {
+    .home-content-card {
+        padding: 1rem;
     }
-
-.content-wrapper::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5); /* Adjust transparency with the last value (0.5 = 50%) */
-        z-index: 1;
-}
-
-    .content-wrapper > * {
-        position: relative;
-        z-index: 2; /* Ensures that the content is above the overlay */
+    .card,
+    .carousel-item .card {
+        padding: 10px;
+    }
 }
